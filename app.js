@@ -34,7 +34,15 @@ const app = Vue.createApp({
   data() {
     return {
       quotes,
+      newQuote: "",
     };
+  },
+  methods: {
+    enterNewQuote(e) {
+      this.quotes.unshift({
+        quote: this.newQuote,
+      });
+    },
   },
 });
 

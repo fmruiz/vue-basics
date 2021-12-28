@@ -10,6 +10,10 @@
     <h1>Vue Basics - Practice</h1>
 
     <div id="myApp">
+      <input type="text" v-model="newQuote" v-on:keypress.enter='enterNewQuote'/>
+
+      <hr />
+
       <ul>
         <li v-for="{quote, author} in quotes">
           <span>{{ quote }}</span>
