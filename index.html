@@ -10,9 +10,12 @@
     <h1>Vue Basics - Practice</h1>
 
     <div id="myApp">
-      <p>{{ title }}</p>
-
-      <button v-on:click="changeTitle">Change title</button>
+      <ul>
+        <li v-for="{quote, author} in quotes">
+          <span>{{ quote }}</span>
+          <span>{{ author }}</span>
+        </li>
+      </ul>
     </div>
 
     <!-- CDN Vue.JS -->
